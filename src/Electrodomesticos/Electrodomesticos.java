@@ -28,15 +28,19 @@ public class Electrodomesticos {
 	
 	
 	public void ComprobarColor (String color) {
-		
+	
+	
 		
 	}
 	
 	public void PrecioFinal() {
+		int tax = 1;
+		//definir a= 100, b=80, c=60, d=50, e=30, f=10
 		
+	
+		
+			
 	}
-	
-	
 	
 	
 	
