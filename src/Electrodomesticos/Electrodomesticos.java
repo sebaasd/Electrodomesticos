@@ -33,10 +33,35 @@ public class Electrodomesticos {
 		
 	}
 	
-	public void PrecioFinal() {
+	public int PrecioFinal() {
 	//	int tax = 1;
 		//definir a= 100, b=80, c=60, d=50, e=30, f=10
+		int tax = 0; 
 		
+	if (consumoEnergetico == 'A') {
+		tax += 100;
+	} else if (consumoEnergetico =='B') {
+		tax += 80;
+	} else if (consumoEnergetico == 'C') {
+		tax += 60;
+	} else if (consumoEnergetico == 'D') {
+		tax += 50;
+	} else if (consumoEnergetico == 'E') {
+		tax += 30;
+	} else
+		tax += 10;
+	
+	if(peso >= 0 && peso <= 19) {
+		tax += 10;
+	} else if (peso == 20 && peso <= 49) {
+		tax +=50;
+	}else if (peso == 50 && peso <=79) {
+		tax += 80;
+	}else if (peso > 79) {
+		tax += 100;
+	}
+	return (int) (precioBase + tax) ;
+	
 	
 		
 			

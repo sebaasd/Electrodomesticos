@@ -14,7 +14,15 @@ public class Television extends Electrodomesticos {
 		
 		//METODO PRECIO FINAL
 		public float Precio_Final() {
-			return resolucion;
+			
+			int tax=super.PrecioFinal();
+			if(resolucion>40) {
+				tax+=precioBase*0.3;
+			}
+			if (sintonizadorTdt) {
+				tax+=50;
+			}
+			return tax;
 	
 			
 			

@@ -14,8 +14,13 @@ public class Lavadora extends Electrodomesticos {
 		
 		//METODO PRECIO FINAL
 		public float Precio_Final() {
-			return carga;
 			
+			int tax=super.PrecioFinal();
+			if (carga>30) {
+				tax+=50;
+			}
+			
+			return tax;
 			
 		}
 		
