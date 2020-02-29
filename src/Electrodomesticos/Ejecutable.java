@@ -27,22 +27,19 @@ public class Ejecutable {
 		Listado_Electro[8]= new Lavadora (700, 0); 
 		Listado_Electro[9]= new Electrodomesticos (0, 0); 
 		
-		float suma_lavadoras = 0 ;
-		float suma_electrodomesticos = 0 ;
-		float suma_teles = 0; 
+		int suma_lavadoras = 0;
+		int suma_electrodomesticos = 0 ;
+		int suma_teles = 0; 
 		
-		  for(int i=0;i<Listado_Electro.length;i++){
-	            
-			  	
-	        }
+
 		
 		
 	
 		
 		
-		System.out.println("suma lavadoras" + suma_lavadoras);
-		System.out.println("suma eletrodomesticos" + suma_electrodomesticos);
-		System.out.println("suma eletrodomesticos" + suma_teles);
+		System.out.println("suma lavadoras: " + suma_lavadoras);
+		System.out.println("suma eletrodomesticos: " + suma_electrodomesticos);
+		System.out.println("suma eletrodomesticos: " + suma_teles);
 		
 		
 	}
